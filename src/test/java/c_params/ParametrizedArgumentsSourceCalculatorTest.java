@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.ArgumentsSource;
 public class ParametrizedArgumentsSourceCalculatorTest {
     Calculator calculator = new Calculator();
 
-    @ParameterizedTest
+    @ParameterizedTest(name = "[{index}] {0} + {1} = {2}")
     @ArgumentsSource(MyProvider2.class)
     public void test(Integer a, Integer b, Integer expected) {
         Assertions.assertEquals(expected, calculator.add(a, b));

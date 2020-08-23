@@ -12,7 +12,7 @@ public class ParametrizedMethodSourceCalculatorTest {
 
     Calculator calculator = new Calculator();
 
-    @ParameterizedTest
+    @ParameterizedTest(name = "[{index}] {0} + {1} = {2}")
     @MethodSource("data")
     public void test(Integer a, Integer b, Integer expected) {
         Assertions.assertEquals(expected, calculator.add(a, b));

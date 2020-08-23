@@ -9,7 +9,7 @@ public class ParametrizedCsvFileSourceCalculatorTest {
 
     Calculator calculator = new Calculator();
 
-    @ParameterizedTest
+    @ParameterizedTest(name = "[{index}] {0} + {1} = {2}")
     @CsvFileSource(resources = "/data2.csv")
 
     public void test(Integer a, Integer b, Integer expected) {
