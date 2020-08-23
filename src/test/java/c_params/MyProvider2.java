@@ -12,9 +12,9 @@ public class MyProvider2 implements ArgumentsProvider {
     @Override
     public Stream<? extends Arguments> provideArguments(ExtensionContext extensionContext) throws Exception {
         return Stream.of(
-                Arguments.of(5,6,11),
-                Arguments.of(6,6,12),
-                Arguments.of(7,8,15)
+                Arguments.of(5, 6, 11),
+                Arguments.of(6, 6, 12),
+                Arguments.of(7, 8, 15)
         );
     }
 }

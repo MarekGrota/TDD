@@ -15,13 +15,13 @@ public class ParametrizedMethodSourceCalculatorTest {
     @ParameterizedTest
     @MethodSource("data")
     public void test(Integer a, Integer b, Integer expected) {
-        Assertions.assertEquals(expected,calculator.add(a, b));
+        Assertions.assertEquals(expected, calculator.add(a, b));
     }
 
     static public Stream<Arguments> data() {
         return Stream.of(
-                Arguments.of(2,3,5),
-                Arguments.of(6,3,9)
+                Arguments.of(2, 3, 5),
+                Arguments.of(6, 3, 9)
         );
 
     }

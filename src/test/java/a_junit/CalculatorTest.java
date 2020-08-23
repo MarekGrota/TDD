@@ -34,7 +34,7 @@ public class CalculatorTest {
     public void add_2Plus2_shouldBeEqualTo4() {
 
         // Act
-        Integer sum = calculator.add(2,2);
+        Integer sum = calculator.add(2, 2);
 
         // Assert
         Assertions.assertEquals(4, sum);
@@ -44,7 +44,7 @@ public class CalculatorTest {
     public void subtraction_2Minus2_shouldBeEqualTo0() {
 
         // Act
-        Integer sub = calculator.subtraction(2,2);
+        Integer sub = calculator.subtraction(2, 2);
 
         // Assert
         Assertions.assertEquals(0, sub);
@@ -54,7 +54,7 @@ public class CalculatorTest {
     public void multiplication_2times2_shouldBeEqualTo4() {
 
         // Act
-        Integer multi = calculator.multiplication(2,2);
+        Integer multi = calculator.multiplication(2, 2);
 
         // Assert
         Assertions.assertEquals(4, multi);
@@ -64,7 +64,7 @@ public class CalculatorTest {
     public void division_2divide2_shouldBeEqualTo1() {
 
         // Act
-        Integer div = calculator.division(2,2);
+        Integer div = calculator.division(2, 2);
 
         // Assert
         Assertions.assertEquals(1, div);
