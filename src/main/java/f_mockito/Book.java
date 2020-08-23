@@ -10,10 +10,12 @@ public class Book {
   }
 
   public String getTitle() {
+
     return title;
   }
 
   public double getPrice() {
+
     return price;
   }
 }
