@@ -22,7 +22,7 @@ public class AssertJCalculatorTest {
     @Test
     public void testDivide2() {
 
-        assertThatExceptionOfType(IllegalArgumentException.class)
+        assertThatExceptionOfType(IllegalArgumentException.class) // w nawiasie podajemy jakiego błedu wyrzuconego przez intelij'a się spodziewamy
                 .isThrownBy(() ->
                     exceptionsCalculator.divide(1,0))
                     .withMessage("do not divide by 0");
